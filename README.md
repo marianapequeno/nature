@@ -6,7 +6,7 @@ Website desenvolvido para prática de [jQuery](https://jquery.com/).
 
 Funcionalidades desenvolvidas: 
 * [ ] Cabeçalho de slides que mudam automaticamente, mas que é pausado quando passa o mouse por cima das imagens.
-* [ ] Links internos com Scroll suave e animação ao scroll
+* [x] Links internos com Scroll suave, animação ao scroll e link ativo no menu
 * [x] Navegação por Tabs no conteúdo principal que, ao clique, abre uma imagem e sua descrição.
 
 ## Tecnologias Utilizadas:

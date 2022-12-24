@@ -22,3 +22,25 @@ $('[data-group]').each(function() {
   });
 });
 
+
+/* Scroll suave */
+$('.menu-nav a[href^="#"]').click(function(e) {
+  e.preventDefault();
+
+  const id = $(this).attr('href'), 
+        menuHeight = $('.menu').innerHeight(), 
+        targetOffset = $(id).offset().top;
+  
+  $('html, body').animate({
+    scrollTop: targetOffset - menuHeight,
+  }, 500);
+});
+
+$('.logo').click(function(e) {
+  e.preventDefault();
+
+  $('html, body').animate({
+    scrollTop: 0,
+  }, 500);
+
+})
