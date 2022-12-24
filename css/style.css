@@ -2,6 +2,58 @@
 	box-sizing: border-box;
 }
 
+body {
+	padding: 0;
+	margin: 0;
+}
+
+/* HEADER */
+.menu{ 
+	background-color: #56CC9D;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
+}
+
+@media (max-width: 800px) {
+	.menu {
+		flex-direction: column;
+	}
+}
+
+.menu .logo {
+	color: #ffffff;
+	font-family: 'Playfair Display';
+	font-size: 2rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.menu ul, .menu ul li {
+	padding: 0;
+	margin: 0;
+}
+
+.menu ul li a {
+	color: #ffffff;
+	font-family: monospace;
+	font-size: 1.125rem;
+	letter-spacing: 2px;
+	border: none;
+	width: 100%;
+	padding: 15px 20px;
+	margin: 0;
+	display: block;
+}
+
+/* CONTENT - SECTIONS */
+section{
+	padding: 10px 15px;
+}
+
 .container {
 	max-width: 900px;
 	margin: 0 auto;
@@ -9,6 +61,7 @@
 
 ul {
 	text-align: center;
+	padding: 0;
 	margin: 80px 0 40px 0;
 }
 
@@ -61,6 +114,15 @@ h2 {
 	letter-spacing: 5px;
 }
 
+@media (max-width: 500px) {
+	h2 {
+		font-size: .875em;
+		min-width: 50px;
+		padding: 5px;
+		top: -70px;
+	}
+}
+
 h3 {
 	font-size: 1.4em;
 	letter-spacing: 1px;
@@ -85,6 +147,14 @@ img {
 	overflow: hidden;
 }
 
+@media (max-width: 870px) {
+	section .item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
 .item-img {
 	width: 50%;
 	float: left;
@@ -98,9 +168,14 @@ img {
 	float: left;
 }
 
+@media (max-width: 500px) {
+	.item-img, .item-info {
+		width: 100%;
+	}
+}
+
 .florestas {
 	background: #FFF3EA;
-	padding: 60px 0;
 }
 
 .florestas .item-img {
@@ -132,7 +207,7 @@ img {
 .js .item {
 	opacity: 0;
 	visibility: hidden;
-	transform: translate3d(-50px,0,0);
+	transform: translate3d(-50px, 0, 0);
 	position: absolute;
 	top: 0;
 }
@@ -141,7 +216,7 @@ img {
 	opacity: 1;
 	visibility: visible;
 	transition: .3s;
+	transform: translate3d(0px, 0, 0); 
 	position: relative;
 	top: auto;
-	transform: translate3d(0px,0,0);
 }
