@@ -1,4 +1,5 @@
 # Website Nature
+![Nature](img/logo.png)
 
 ## Descrição: 
 Website desenvolvido para prática de [jQuery](https://jquery.com/).
