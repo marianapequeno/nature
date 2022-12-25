@@ -8,6 +8,9 @@ Funcionalidades desenvolvidas:
 * [ ] Cabeçalho de slides que mudam automaticamente, mas que é pausado quando passa o mouse por cima das imagens.
 * [x] Links internos com Scroll suave, animação ao scroll e link ativo no menu
 * [x] Navegação por Tabs no conteúdo principal que, ao clique, abre uma imagem e sua descrição.
+* [x] Menu Mobile
+
+![GIF página no desktop](img/videos/page.gif)
 
 ## Tecnologias Utilizadas:
 <div>
