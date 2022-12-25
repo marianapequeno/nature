@@ -104,3 +104,28 @@ function slider(sliderName, velocidade) {
   }
 }
 slider('introducao', 2000);
+
+/* Animação dos botões ao scroll */
+let $target = $('[data-anime="scroll"]'), 
+      animationClass = 'animate', 
+      offset = $(window).height() * 3/4;
+
+function animeScroll() {
+  let documentTop = $(window).scrollTop();
+
+  $target.each(function() {
+    let itemTop = $(this).offset().top;
+
+    if(documentTop > itemTop - offset) {
+      $(this).addClass(animationClass);
+    } else {
+      $(this).removeClass(animationClass);
+    }
+  });
+}
+
+animeScroll();
+
+$(document).scroll(function() {
+  animeScroll();
+});
