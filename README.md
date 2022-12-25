@@ -5,9 +5,9 @@
 Website desenvolvido para prática de [jQuery](https://jquery.com/).
 
 Funcionalidades desenvolvidas: 
-* [ ] Cabeçalho de slides que mudam automaticamente, mas que é pausado quando passa o mouse por cima das imagens.
+* [x] Cabeçalho de slides que mudam automaticamente após 2 segundos
 * [x] Links internos com Scroll suave, animação ao scroll e link ativo no menu
-* [x] Navegação por Tabs no conteúdo principal que, ao clique, abre uma imagem e sua descrição.
+* [x] Navegação por Tabs no conteúdo principal que, ao clique, abre uma imagem e sua descrição
 * [x] Menu Mobile
 
 ![GIF página no desktop](img/videos/page.gif)

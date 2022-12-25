@@ -200,6 +200,7 @@ p {
 
 .florestas .item-info {
   width: 100%;
+	padding: 0 15px;
 }
 
 /* Introdução */
@@ -226,6 +227,7 @@ p {
 
 .slide {
   position: relative;
+	top: 37px;
   overflow: hidden;
 }
 
@@ -378,6 +380,9 @@ p {
 }
 
 @media only screen and (max-width: 480px) {
+	.introducao h2 {
+		font-size: 1.2rem;
+	}
   .item-img,
   .item-info {
     width: 70%;
